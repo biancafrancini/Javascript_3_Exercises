@@ -12,4 +12,4 @@ const json = JSON.stringify(person, (key, value) => {
   return value;
 });
 
-console.log(JSON.parse(json)); // Should return: { id: 1, age: 25 }
+console.log(json); // Should return: { id: 1, age: 25 }
