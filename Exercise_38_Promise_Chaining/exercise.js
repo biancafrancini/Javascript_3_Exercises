@@ -10,9 +10,9 @@ let promiseOne = new Promise((resolve, reject) => {
 
 //console.log(promiseOne);
 
-function promiseTwo(number) {
+function promiseTwo(numberID) {
   return new Promise((resolve, reject) => {
-    if (number > 0.5) {
+    if (numberID > 0.5) {
       return resolve({name: "John", age: 24});
     } else {
       return reject("error");
