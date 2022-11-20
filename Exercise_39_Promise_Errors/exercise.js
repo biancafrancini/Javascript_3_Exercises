@@ -1,7 +1,7 @@
 const isLogged = true;
 
 let promiseOne = new Promise((resolve, reject) => {
-  if (isLogged === true) {
+  if (isLogged) {
     return resolve(Math.random());
   } else {
     return reject(new Error("Log in data are not valid. Please, try again."));
